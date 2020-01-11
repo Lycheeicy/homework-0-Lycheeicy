@@ -1,4 +1,5 @@
 package hw0;
+import java.lang.Integer;
 
 public class Count {
     // Effects: return the number of occurrences of 0 in a
@@ -13,10 +14,15 @@ public class Count {
     }
 
     public static void main(String[] args) {
+	int len = args.length;
+	int[] a = new int[len];
+	for(int i=0;i<len;i++){
+		a[i]=Integer.parseInt(args[i]);
+	}
+	int count = numZero(a);
+	System.out.println("NUM ZEROS: "+count);
         // (a) Modify the main method to contain exactly one call to the
         // numZero method. The arguments for the call should be read from
         // the command line (parsing args).
-
-        ..................
     }
 }
