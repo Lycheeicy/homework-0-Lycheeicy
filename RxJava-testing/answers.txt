@@ -1,0 +1,10 @@
+(b)
+
+./gradlew test --tests 'Single*'
+
+There were 753 tests run.
+
+(c)
+
+In order to ignore a test method, use @Ignore along with @Test annotation.
+If we want to ignore all the tests of class, use @Ignore annotation at the class level.
